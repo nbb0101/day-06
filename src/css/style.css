@@ -50,3 +50,145 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999;
 }
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: .1rem;
+  width: 100%;
+  height: .4rem;
+  padding: .2rem;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .6;
+}
+
+header label {
+  flex: 1;
+  width: 100%;
+  height: .4rem;
+}
+
+header label input {
+  width: 100%;
+  height: .4rem;
+  border-radius: .05rem;
+  border: 0;
+  padding: .05rem;
+}
+
+section {
+  flex: 1;
+  background: #fff;
+}
+
+section .boxs {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section .boxs .box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+section .boxs .box:nth-of-type(1) {
+  display: block;
+}
+
+section .boxs .box .banner {
+  width: 100%;
+  height: 1.75rem;
+}
+
+section .boxs .box .banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+section .boxs .box main {
+  width: 100%;
+  height: 2rem;
+}
+
+section .boxs .box main nav {
+  width: 100%;
+  height: 100%;
+  padding: .2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .boxs .box main nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: .8rem;
+}
+
+section .boxs .box main nav li img {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+}
+
+section .boxs .box main nav li span {
+  font-size: .16rem;
+  color: #727678;
+  margin-top: .04rem;
+}
+
+footer {
+  width: 100%;
+  height: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #9D9FA1;
+}
+
+footer a i.icon {
+  font-size: .22rem;
+}
+
+footer a span {
+  font-size: .12rem;
+}
+
+footer a.active {
+  color: #4EAC6D;
+}
